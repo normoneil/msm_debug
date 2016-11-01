@@ -41,9 +41,6 @@ class MoviesController < ApplicationController
   end
 
   def destroy
-    @deleted_movie = Movie.find(params[:id]).title
     @movie = Movie.find(params[:id])
-    @movie.destroy
-
   end
 end
